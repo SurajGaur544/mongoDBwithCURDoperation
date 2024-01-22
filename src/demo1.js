@@ -73,7 +73,7 @@ const createDocument = async () => {
 const getDocument = async () => {
     try{
        // const result = await User.findOne();
-        const result = await User.find();
+        const result = await User.find ({ price: '1/55' });
         console.log(result);
     }
     catch(err) {
